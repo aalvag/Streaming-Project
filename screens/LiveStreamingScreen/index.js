@@ -64,7 +64,12 @@ export default function LiveStreamingScreen() {
       {count > 0 ? (
         <CountDown count={count} />
       ) : isBegin ? (
-        <BeginStream setCount={setCount} setType={setType} />
+        <BeginStream
+          setCount={setCount}
+          setType={setType}
+          type={type}
+          Camera={Camera}
+        />
       ) : (
         <LastStream />
       )}

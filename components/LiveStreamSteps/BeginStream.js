@@ -7,7 +7,7 @@ import {
   TextInput,
 } from "react-native";
 
-const BeginStream = ({ setType, setCount }) => {
+const BeginStream = ({ setType, setCount, type, Camera }) => {
   return (
     <View
       style={{
